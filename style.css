@@ -419,7 +419,7 @@ body {
   color: var(--olive);
   text-transform: uppercase;
   letter-spacing: 2px;
-  width: 48px;
+  width: 72px;
   flex-shrink: 0;
 }
 
