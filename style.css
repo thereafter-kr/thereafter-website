@@ -428,6 +428,31 @@ body {
   color: var(--text);
 }
 
+.about-projects {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.about-projects li {
+  font-size: 15px;
+  color: var(--text);
+  padding-left: 12px;
+  position: relative;
+}
+
+.about-projects li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
 /* ================================================
    CONTACT
    ================================================ */
