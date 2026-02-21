@@ -62,18 +62,22 @@ body {
 }
 
 .nav-logo {
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 4px;
-  color: #fff;
   text-decoration: none;
-  text-transform: lowercase;
-  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  height: 56px;
 }
 
-.nav.scrolled .nav-logo {
-  color: var(--dark);
+.nav-logo img {
+  height: 20px;
+  width: auto;
 }
+
+.nav-logo-black { display: none; }
+.nav-logo-white { display: block; }
+
+.nav.scrolled .nav-logo-black { display: block; }
+.nav.scrolled .nav-logo-white { display: none; }
 
 .nav-links {
   display: flex;
@@ -135,12 +139,13 @@ body {
 }
 
 .hero-logo {
-  font-size: 64px;
-  font-weight: 300;
-  letter-spacing: 16px;
-  color: #fff;
-  text-transform: lowercase;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.hero-logo img {
+  height: 56px;
+  width: auto;
 }
 
 .hero-slogan {
@@ -509,9 +514,8 @@ body {
   .nav-links.open a { color: var(--text); }
   .nav-toggle { display: flex; }
 
-  .hero-logo {
-    font-size: 40px;
-    letter-spacing: 10px;
+  .hero-logo img {
+    height: 40px;
   }
 
   .hero-slogan { font-size: 14px; }
