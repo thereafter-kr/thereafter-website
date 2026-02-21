@@ -17,6 +17,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 56px;
+  color-scheme: light only;
 }
 
 body {
@@ -570,7 +571,11 @@ body {
 
   .about-item {
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
+  }
+
+  .about-label {
+    width: auto;
   }
 
   .contact-item a {
