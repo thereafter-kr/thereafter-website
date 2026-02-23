@@ -354,6 +354,18 @@ body {
   transform: translateY(-1px);
 }
 
+.btn.btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--orange);
+  color: var(--orange);
+  margin-left: 12px;
+}
+
+.btn.btn-outline:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
 /* ================================================
    ABOUT
    ================================================ */
