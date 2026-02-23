@@ -272,7 +272,7 @@ body {
 /* ================================================
    SYSTEM
    ================================================ */
-.system { background: #FAFAF8; }
+.system { background: var(--olive); }
 
 .system-grid {
   display: grid;
@@ -281,12 +281,12 @@ body {
 }
 
 .system-card {
-  background: #fff;
-  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: 12px;
   padding: 28px 24px;
   text-decoration: none;
-  color: var(--text);
+  color: #fff;
   display: block;
   transition: all 0.25s;
 }
@@ -296,22 +296,24 @@ body {
 }
 
 .system-card--live:hover {
-  border-color: var(--orange);
-  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+  background: rgba(255,255,255,0.25);
+  border-color: rgba(255,255,255,0.5);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
   transform: translateY(-4px);
 }
 
 .system-card--live:hover .system-link {
-  color: var(--orange);
+  color: #fff;
 }
 
 .system-card--disabled {
   cursor: default;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .system-card--disabled:hover {
-  border-color: var(--border);
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.2);
   box-shadow: none;
   transform: none;
 }
@@ -325,19 +327,19 @@ body {
   margin-bottom: 8px;
 }
 
-.system-phase.there-text { color: var(--olive); }
+.system-phase.there-text { color: rgba(255,255,255,0.6); }
 .system-phase.after-text { color: var(--orange); }
 
 .system-name {
   font-size: 17px;
   font-weight: 600;
-  color: var(--dark);
+  color: #fff;
   margin-bottom: 6px;
 }
 
 .system-desc {
   font-size: 13px;
-  color: var(--sub);
+  color: rgba(255,255,255,0.7);
   line-height: 1.6;
   margin-bottom: 12px;
 }
@@ -352,13 +354,13 @@ body {
 }
 
 .system-status.live {
-  background: rgba(181,173,142,0.18);
-  color: var(--olive);
+  background: rgba(255,255,255,0.2);
+  color: #fff;
 }
 
 .system-status.soon {
-  background: rgba(0,0,0,0.04);
-  color: var(--muted);
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
 }
 
 .system-link {
@@ -366,7 +368,7 @@ body {
   margin-top: 14px;
   font-size: 12px;
   font-weight: 600;
-  color: var(--muted);
+  color: rgba(255,255,255,0.5);
   letter-spacing: 0.3px;
   transition: color 0.25s;
 }
