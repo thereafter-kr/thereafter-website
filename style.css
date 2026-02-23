@@ -1,8 +1,6 @@
 /* === thereafter Website — 4-Color Palette === */
 :root {
   --olive: #B5AD8E;
-  --pink: #E8C4B8;
-  --beige: #D5CAAB;
   --orange: #E8A94D;
   --dark: #1A1A1A;
   --text: #333333;
@@ -353,27 +351,6 @@ body {
 .system-status.soon {
   background: rgba(0,0,0,0.04);
   color: var(--muted);
-}
-
-
-.btn {
-  display: inline-block;
-  padding: 14px 36px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #fff;
-  background: var(--orange);
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.btn:hover {
-  background: #D49A3A;
-  box-shadow: 0 4px 16px rgba(232,169,77,0.3);
-  transform: translateY(-1px);
 }
 
 /* ================================================
