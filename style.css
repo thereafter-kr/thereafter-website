@@ -291,15 +291,23 @@ body {
   transition: all 0.25s;
 }
 
-.system-card:hover {
+.system-card--live {
+  cursor: pointer;
+}
+
+.system-card--live:hover {
   border-color: var(--orange);
   box-shadow: 0 6px 24px rgba(0,0,0,0.06);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+}
+
+.system-card--live:hover .system-link {
+  color: var(--orange);
 }
 
 .system-card--disabled {
   cursor: default;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .system-card--disabled:hover {
@@ -351,6 +359,16 @@ body {
 .system-status.soon {
   background: rgba(0,0,0,0.04);
   color: var(--muted);
+}
+
+.system-link {
+  display: block;
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+  transition: color 0.25s;
 }
 
 /* ================================================
