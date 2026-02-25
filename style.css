@@ -774,9 +774,27 @@ body {
 
   .flow-horizontal {
     width: auto;
-    flex-direction: row;
-    transform: rotate(90deg);
+    flex-direction: column;
+    align-items: center;
     padding: 12px 0;
+  }
+
+  .flow-horizontal .flow-h-line {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-horizontal .line {
+    width: 2px;
+    height: 28px;
+  }
+
+  .flow-horizontal .arrow-right {
+    border-top: none;
+    border-bottom: none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid var(--sh-flow-arrow);
   }
 
   .flow-merge .merge-branches,
