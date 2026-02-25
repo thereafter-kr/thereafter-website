@@ -244,7 +244,7 @@ body {
 
 .work-card {
   text-align: center;
-  padding: 48px 28px;
+  padding: 36px 24px;
   background: var(--cream);
   border: 1px solid var(--card-light);
   border-radius: 12px;
@@ -757,11 +757,11 @@ body {
   .section-sub { margin-bottom: 40px; }
 
   .work-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 
-  .work-card { padding: 36px 24px; }
+  .work-card { padding: 28px 20px; }
 
   .card-row {
     flex-direction: column;
