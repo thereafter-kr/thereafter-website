@@ -82,39 +82,100 @@
     <div class="container">
       <h2 class="section-title light">thereafter 시스템</h2>
       <p class="section-sub on-olive">발견은 There, 구성은 After</p>
-      <a href="https://thereafter-kr.github.io/there-insight/system-hub.html" class="system-hub-link">시스템 플로우 보기 →</a>
-      <div class="system-grid">
+      <div class="system-flow">
 
-        <a href="https://thereafter-kr.github.io/there-insight/" class="system-card system-card--live">
-          <span class="system-phase there-text">there</span>
-          <h3 class="system-name">There Insight</h3>
-          <p class="system-desc">인사이트 라이브러리</p>
-          <span class="system-status live">LIVE</span>
-          <span class="system-link">바로가기 →</span>
-        </a>
+        <!-- Phase 1 -->
+        <div class="phase-label">
+          <span class="phase-tag">Phase 1 — 발견 (Discovery)</span>
+          <span class="phase-line"></span>
+        </div>
 
-        <a href="https://thereafter-kr.github.io/there-source/" class="system-card system-card--live">
-          <span class="system-phase there-text">there</span>
-          <h3 class="system-name">There Source</h3>
-          <p class="system-desc">실행 패턴 & 사례 라이브러리</p>
-        </a>
+        <!-- Row 1: Insight ←참조→ Source -->
+        <div class="system-flow-row">
+          <a href="https://thereafter-kr.github.io/there-insight/" class="system-card system-card--live">
+            <span class="system-phase there-text">there</span>
+            <h3 class="system-name">There Insight</h3>
+            <p class="system-desc">인사이트 라이브러리</p>
+            <span class="system-status live">LIVE</span>
+            <span class="system-link">바로가기 →</span>
+          </a>
 
-        <a href="https://thereafter-kr.github.io/there-match/" class="system-card system-card--live">
-          <span class="system-phase there-text">there</span>
-          <h3 class="system-name">There Match</h3>
-          <p class="system-desc">모듈 조합 추천</p>
-        </a>
+          <div class="flow-horizontal">
+            <div class="flow-h-line">
+              <span class="line"></span>
+              <span class="arrow-right"></span>
+            </div>
+            <div class="flow-label">참조</div>
+          </div>
 
-        <a href="https://thereafter-kr.github.io/after-brief/" class="system-card system-card--live">
-          <span class="system-phase after-text">after</span>
-          <h3 class="system-name">After Brief</h3>
-          <p class="system-desc">20슬라이드 메시지 설계 에디터</p>
-        </a>
+          <a href="https://thereafter-kr.github.io/there-source/" class="system-card system-card--live">
+            <span class="system-phase there-text">there</span>
+            <h3 class="system-name">There Source</h3>
+            <p class="system-desc">실행 패턴 & 사례 라이브러리</p>
+          </a>
+        </div>
 
-        <div class="system-card system-card--live">
-          <span class="system-phase after-text">after</span>
-          <h3 class="system-name">After Deck</h3>
-          <p class="system-desc">프레젠테이션 조립</p>
+        <!-- Merge: Insight + Source → Match -->
+        <div class="flow-merge">
+          <div class="merge-branches">
+            <div class="merge-branch"><div class="merge-line-up"></div></div>
+            <div class="merge-branch"><div class="merge-line-up"></div></div>
+          </div>
+          <div class="merge-line-h"></div>
+          <div class="merge-center">
+            <div class="merge-line-down"></div>
+            <div class="merge-arrow"></div>
+          </div>
+          <div class="merge-label">인사이트 + 사례 → 모듈 조합</div>
+        </div>
+
+        <!-- Row 2: Match -->
+        <div class="system-flow-row">
+          <a href="https://thereafter-kr.github.io/there-match/" class="system-card system-card--live system-card--single">
+            <span class="system-phase there-text">there</span>
+            <h3 class="system-name">There Match</h3>
+            <p class="system-desc">모듈 조합 추천</p>
+          </a>
+        </div>
+
+        <!-- Flow: Match → Brief -->
+        <div class="flow-vertical">
+          <div class="flow-line"></div>
+          <div class="flow-label">조합 확정 → 메시지 설계</div>
+          <div class="flow-line"></div>
+          <div class="flow-arrow"></div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase-label">
+          <span class="phase-tag">Phase 2 — 구성 (Composition)</span>
+          <span class="phase-line"></span>
+        </div>
+
+        <!-- Row 3: Brief -->
+        <div class="system-flow-row">
+          <a href="https://thereafter-kr.github.io/after-brief/" class="system-card system-card--live system-card--single">
+            <span class="system-phase after-text">after</span>
+            <h3 class="system-name">After Brief</h3>
+            <p class="system-desc">20슬라이드 메시지 설계 에디터</p>
+          </a>
+        </div>
+
+        <!-- Flow: Brief → Deck -->
+        <div class="flow-vertical">
+          <div class="flow-line"></div>
+          <div class="flow-label">메시지 → 프레젠테이션 조립</div>
+          <div class="flow-line"></div>
+          <div class="flow-arrow"></div>
+        </div>
+
+        <!-- Row 4: Deck -->
+        <div class="system-flow-row">
+          <div class="system-card system-card--disabled system-card--single">
+            <span class="system-phase after-text">after</span>
+            <h3 class="system-name">After Deck</h3>
+            <p class="system-desc">프레젠테이션 조립</p>
+          </div>
         </div>
 
       </div>
