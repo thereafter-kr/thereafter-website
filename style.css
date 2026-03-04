@@ -927,4 +927,8 @@ body {
 .project-item {
   opacity: 1 !important;
   transform: none !important;
+}/* 시스템 섹션 타이틀 줄넘김 수정 */
+.system .section-title.light {
+  letter-spacing: 1px;
+  word-break: keep-all;
 }
