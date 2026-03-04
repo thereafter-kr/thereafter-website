@@ -923,4 +923,8 @@ body {
   .project-name {
     font-size: 17px;
   }
+}/* Projects 표시 보장 */
+.project-item {
+  opacity: 1 !important;
+  transform: none !important;
 }
