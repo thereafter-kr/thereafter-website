@@ -19,7 +19,7 @@ links.querySelectorAll('a').forEach(a => {
 });
 
 // Scroll fade-in animations
-const observerOptions = { threshold: 0.15 };
+const observerOptions = { threshold: 0.1 };
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -29,9 +29,10 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Apply fade-up to key elements
+// Apply fade-up to specific safe elements only
+// Projects section is excluded entirely to prevent invisible text
 document.querySelectorAll(
-  '.work-card, .about-content, .contact-info, .section-title, .section-sub, .system-card, .value-card'
+  '.work .work-card, .about-content, .contact-info, .system-card, .value-card'
 ).forEach(el => {
   el.classList.add('fade-up');
   observer.observe(el);
