@@ -947,6 +947,8 @@ body {
   border: 1px solid var(--card-light);
   border-radius: 12px;
   padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
 }
 
 .value-num {
@@ -964,12 +966,20 @@ body {
   color: var(--text-dark);
   margin-bottom: 12px;
   line-height: 1.5;
+  word-break: keep-all;
 }
 
 .value-desc {
   font-size: 14px;
   color: var(--text-light);
   line-height: 1.8;
+  word-break: keep-all;
+}
+
+/* Projects 표시 보장 */
+.project-item {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 @media (max-width: 768px) {
