@@ -974,6 +974,7 @@ body {
   color: var(--text-light);
   line-height: 1.8;
   word-break: keep-all;
+  text-align: justify;
 }
 
 /* Projects 표시 보장 */
