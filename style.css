@@ -932,3 +932,104 @@ body {
   letter-spacing: 1px;
   word-break: keep-all;
 }
+
+/* ================================================
+   VALUE SECTION (신규)
+   ================================================ */
+.value {
+  background: var(--cream);
+}
+
+.value-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.value-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 28px;
+}
+
+.value-num {
+  display: block;
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--accent);
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.value-heading {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.value-desc {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+/* ================================================
+   SYSTEM STEPS (새 3단계 구조)
+   ================================================ */
+.system-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 20px;
+}
+
+.system-step {
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.system-num {
+  display: block;
+  font-size: 36px;
+  font-weight: 200;
+  color: rgba(255,255,255,0.25);
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.system-step-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 12px;
+}
+
+.system-step-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.system-step-result {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ================================================
+   RESPONSIVE - VALUE & SYSTEM STEPS
+   ================================================ */
+@media (max-width: 768px) {
+  .value-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .system-steps {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
