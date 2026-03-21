@@ -31,7 +31,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Apply fade-up to key elements
 document.querySelectorAll(
-  '.work-card, .about-content, .contact-info, .section-title, .section-sub, .system-card'
+  '.work-card, .about-content, .contact-info, .section-title, .section-sub, .system-card, .value-card'
 ).forEach(el => {
   el.classList.add('fade-up');
   observer.observe(el);
