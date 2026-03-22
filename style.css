@@ -849,11 +849,21 @@ body {
   .section-sub { margin-bottom: 40px; }
 
   .work-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
   .work-card { padding: 28px 20px; }
+
+  /* 모바일에서 강제 줄바꿈 해제 — 자연스럽게 흐르게 */
+  .hero-desc br,
+  .value-desc br,
+  .project-desc br,
+  .about-bio br,
+  .section-sub br,
+  .work-desc br {
+    display: none;
+  }
 
   .card-row {
     flex-direction: column;
