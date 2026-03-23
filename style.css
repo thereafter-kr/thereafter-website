@@ -845,7 +845,12 @@ body {
   .hero-slogan { font-size: 14px; }
 
   .section { padding: 72px 0; }
-  .section-title { font-size: 22px; }
+  .section-title {
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-break: keep-all;
+    padding: 0 16px;
+  }
   .section-sub { margin-bottom: 40px; }
 
   .work-cards {
